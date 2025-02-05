@@ -9,4 +9,5 @@ import org.springframework.data.jpa.repository.JpaRepository;
  "Estudiantes" y tamb se especifica el tipo de la PK q es Integer
  */
 public interface EstudianteRepositorio extends JpaRepository<Estudiante,Integer> {
+
 }
