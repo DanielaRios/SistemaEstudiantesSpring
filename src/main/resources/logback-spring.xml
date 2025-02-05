@@ -18,12 +18,13 @@
             <!-- %logger{36} - Abbreviate -->
 
             <!-- [Date and time] [Thread] LoggingLevel : LoggerName - Logging message -->
-            <pattern>[%thread] %-5level: %logger - %msg%n</pattern>
+            <!-- <pattern>[%thread] %-5level: %logger - %msg%n</pattern> -->
+            <pattern>[%thread]%msg</pattern>
         </encoder>
     </appender>
 
     <!-- Logging levels are, in order of precedence -> TRACE, DEBUG, INFO, WARN and ERROR -->
-    <root level="info">
+    <root level="info"> /* indicamos el nivel que se va imprimir que es "info" */
         <appender-ref ref="STDOUT"/>
     </root>
 
