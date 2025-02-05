@@ -11,7 +11,7 @@ import java.util.List;
 @Service  //se agregar para que esta clase la pueda reconocer como componente service
 public class EstudianteServicio implements IEstudianteServicio {
 
-    @Autowired   //anotación proporcionada por Spring que te permite inyectar dependencias automáticamente
+    @Autowired   //anotación proporcionada por Spring que te permite inyectar dependencias automáticamente, es para no instanciarla utilizando el "new"
     private EstudianteRepositorio estudianteRepositorio;
 
     @Override
